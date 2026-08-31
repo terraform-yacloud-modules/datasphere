@@ -1,3 +1,10 @@
+## v0.4.0 - 2026-08-31
+### Chores
+- f3f2f85 chore(deps): bump actions/cache from 5.0.3 to 5.0.5
+
+### Miscellaneous
+- 6dec8c6 Merge pull request [#8](https://github.com/terraform-yacloud-modules/datasphere/pull/8) from terraform-yacloud-modules/dependabot/github_actions/actions/cache-5.0.5
+
 ## v0.3.0 - 2026-03-02
 ### Chores
 - f4f8536 chore(deps): bump hashicorp/setup-terraform from 3 to 4
