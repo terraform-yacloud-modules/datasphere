@@ -1,3 +1,10 @@
+## v0.5.0 - 2026-11-07
+### Chores
+- e8aeb2a chore(deps): bump actions/cache from 5.0.5 to 6.1.0
+
+### Miscellaneous
+- 29e21d5 Merge pull request [#9](https://github.com/terraform-yacloud-modules/datasphere/pull/9) from terraform-yacloud-modules/dependabot/github_actions/actions/cache-6.1.0
+
 ## v0.4.0 - 2026-08-31
 ### Chores
 - f3f2f85 chore(deps): bump actions/cache from 5.0.3 to 5.0.5
