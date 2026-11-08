@@ -1,3 +1,10 @@
+## v0.6.0 - 2026-11-08
+### Chores
+- 89e3162 chore(deps): bump actions/checkout from 6 to 7
+
+### Miscellaneous
+- db15d42 Merge pull request [#10](https://github.com/terraform-yacloud-modules/datasphere/pull/10) from terraform-yacloud-modules/dependabot/github_actions/actions/checkout-7
+
 ## v0.5.0 - 2026-11-07
 ### Chores
 - e8aeb2a chore(deps): bump actions/cache from 5.0.5 to 6.1.0
