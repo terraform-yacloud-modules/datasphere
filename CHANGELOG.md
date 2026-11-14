@@ -1,3 +1,10 @@
+## v0.7.0 - 2026-11-14
+### Features
+- 9f771c7 feat: add DataSphere community and project module
+
+### Miscellaneous
+- 0e67376 Merge pull request [#11](https://github.com/terraform-yacloud-modules/datasphere/pull/11) from terraform-yacloud-modules/feat/datasphere-module
+
 ## v0.6.0 - 2026-11-08
 ### Chores
 - 89e3162 chore(deps): bump actions/checkout from 6 to 7
