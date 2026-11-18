@@ -1,3 +1,7 @@
+## v0.8.0 - 2026-11-18
+### Miscellaneous
+- 828d05f ci: run semver job only on push to main ([#12](https://github.com/terraform-yacloud-modules/datasphere/pull/12))
+
 ## v0.7.0 - 2026-11-14
 ### Features
 - 9f771c7 feat: add DataSphere community and project module
