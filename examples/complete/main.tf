@@ -91,5 +91,33 @@ module "datasphere" {
     "datasphere.community-projects.developer" = ["serviceAccount:${yandex_iam_service_account.this.id}"]
   }
 
+  additional_projects = {
+    analytics = {
+      name        = "example-datasphere-project-analytics"
+      description = "Additional DataSphere project created by the complete example"
+      labels = {
+        example = "complete"
+        purpose = "analytics"
+      }
+
+      limits = {
+        max_units_per_hour      = 5
+        max_units_per_execution = 5
+        balance                 = 5
+      }
+
+      settings = {
+        service_account_id = yandex_iam_service_account.this.id
+        subnet_id          = yandex_vpc_subnet.this.id
+        security_group_ids = [yandex_vpc_security_group.this.id]
+        default_folder_id  = local.folder_id
+      }
+
+      iam_bindings = {
+        "datasphere.community-projects.developer" = ["serviceAccount:${yandex_iam_service_account.this.id}"]
+      }
+    }
+  }
+
   depends_on = [yandex_resourcemanager_folder_iam_member.this]
 }
