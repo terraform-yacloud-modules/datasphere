@@ -7,3 +7,8 @@ output "project_id" {
   description = "ID of the DataSphere project"
   value       = module.datasphere.project_id
 }
+
+output "additional_project_ids" {
+  description = "IDs of the additional DataSphere projects"
+  value       = module.datasphere.additional_project_ids
+}

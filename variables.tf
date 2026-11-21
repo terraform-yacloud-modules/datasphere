@@ -67,6 +67,30 @@ variable "project_settings" {
   default = null
 }
 
+variable "additional_projects" {
+  description = "Additional DataSphere projects created in the same community, keyed by an arbitrary project key. The primary project is configured with the project_* variables"
+  type = map(object({
+    name        = string
+    description = optional(string)
+    labels      = optional(map(string))
+    limits = optional(object({
+      max_units_per_hour      = optional(number)
+      max_units_per_execution = optional(number)
+      balance                 = optional(number)
+    }))
+    settings = optional(object({
+      service_account_id      = optional(string)
+      subnet_id               = optional(string)
+      data_proc_cluster_id    = optional(string)
+      security_group_ids      = optional(set(string))
+      default_folder_id       = optional(string)
+      stale_exec_timeout_mode = optional(string)
+    }))
+    iam_bindings = optional(map(set(string)), {})
+  }))
+  default = {}
+}
+
 variable "community_iam_bindings" {
   description = "Map of IAM roles to member lists for the DataSphere community"
   type        = map(set(string))
